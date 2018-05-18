@@ -1,0 +1,48 @@
+#mainNav {
+  transition: all 0.3s ease; }
+
+.white-nav {
+  background-color: white; }
+
+.card, .cardModal {
+  border: none;
+  background-color: #4b54bb;
+  padding: 0px; }
+  .card .image-card, .cardModal .image-card {
+    width: 45%;
+    padding: 0; }
+    .card .image-card img, .cardModal .image-card img {
+      width: 100%; }
+  .card .meta-info-card, .cardModal .meta-info-card, .card .meta-info-cardModal, .cardModal .meta-info-cardModal {
+    padding: 0px; }
+    .card .meta-info-card p, .cardModal .meta-info-card p, .card .meta-info-cardModal p, .cardModal .meta-info-cardModal p {
+      margin: 4px; }
+  .card .row, .cardModal .row {
+    background-color: white;
+    margin: 3px;
+    height: 100%; }
+  .card:hover, .cardModal:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.3s;
+    z-index: 1; }
+
+.cardModal {
+  background-color: white; }
+  .cardModal:hover {
+    transform: none; }
+
+body {
+  background-color: #4b54bb; }
+
+#mainContainer {
+  margin-top: 100px;
+  font-size: 13px; }
+
+#formContainer {
+  margin-top: 70px; }
+
+form {
+  background-color: white;
+  padding: 20px; }
+
+/*# sourceMappingURL=base.css.map */

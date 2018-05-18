@@ -1,0 +1,39 @@
+.card {
+    border: none;
+    background-color: rgb(75, 84, 187);
+    .image-card {
+        width: 45%;
+        padding: 0;
+        img {
+            width: 100%;
+        }
+    }
+    .meta-info-card {
+        padding: 0px;
+        p {
+            margin: 4px;
+        }
+    }
+    .meta-info-cardModal {
+        @extend .meta-info-card;
+    }
+    .row {
+        background-color: white;
+        margin: 3px;
+        height: 100%;
+    }
+    padding: 0px;
+    &:hover {
+        transform: scale(1.1,1.1);
+        transition-duration: 0.3s;
+        z-index: 1;
+    }
+}
+
+.cardModal {
+    @extend .card;
+    background-color: white;
+    &:hover {
+        transform: none;
+    }
+}

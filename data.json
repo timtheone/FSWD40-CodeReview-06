@@ -1,0 +1,72 @@
+var libData = `[
+    {
+        "Title":"Dylan",
+        "Type":"Music",
+        "Author":"Bob Dylan",
+        "Genre": "rock",
+        "Publisher":"Columbia Records",
+        "Image": "images/bob_dylan.jpg",
+        "ShortDescription": "Dylan is the 13th studio album by American singer-songwriter Bob Dylan, released on November 19, 1973 by Columbia Records. Compiled and issued by the label with no input from Dylan himself, it contains no original Dylan songs, the material consisting of two outtakes from Self Portrait and another seven from New Morning. It followed the artist's departure from Columbia for Asylum Records, and the announcement of his first major tour since 1966.",
+        "Rating": 5
+    },
+    {
+        "Title":"City Lights",
+        "Type":"Movie",
+        "Author":"Charlie Chaplin",
+        "Genre": "romantic comedy",
+        "Publisher":"United Artists",
+        "Image": "images/city_lights.jpg",
+        "ShortDescription": "City Lights is a 1931 American pre-Code silent romantic comedy film written, produced, directed by and starring Charlie Chaplin. The story follows the misadventures of Chaplin's Tramp as he falls in love with a blind girl (Virginia Cherrill) and develops a turbulent friendship with an alcoholic millionaire (Harry Myers).",
+        "Rating": 4
+    },
+    {
+        "Title":"Lawrence of Arabia",
+        "Type":"Movie",
+        "Author":"T.E.Lawrence",
+        "Genre": "historical drama",
+        "Publisher":"Columbia Pictures",
+        "Image": "images/Lawrence_of_arabia.jpg",
+        "ShortDescription": "Lawrence of Arabia is a 1962 epic historical drama film based on the life of T. E. Lawrence. It was directed by David Lean and produced by Sam Spiegel through his British company Horizon Pictures, with the screenplay by Robert Bolt and Michael Wilson. The film stars Peter O'Toole in the title role. It is widely considered one of the greatest and most influential films in the history of cinema.",
+        "Rating": 3
+    },
+    {
+        "Title":"Diamond Life",
+        "Type":"Music",
+        "Author":"Sade",
+        "Genre": "smooth soul",
+        "Publisher":"Epic",
+        "Image": "images/sade-diamond-life.jpg",
+        "ShortDescription": "Diamond Life is the debut studio album by English band Sade. It was first released in the United Kingdom on 16 July 1984 by Epic Records and in the United States on 27 February 1985 by Portrait Records. Diamond Life went on to sell over six million copies worldwide, becoming one of the top-selling debut recordings of the '80s and the best-selling debut by a British female vocalist",
+        "Rating": 2
+    },
+    {
+        "Title":"Foundation",
+        "Type":"Book",
+        "Author":"Isaac Asimov",
+        "Genre": "fantasy science fiction",
+        "Publisher":"Heyne",
+        "Image": "images/fondation-asimov.jpg",
+        "ShortDescription": "Foundation is a science fiction novel by American writer Isaac Asimov. It is the first published in his Foundation Trilogy (later expanded into the Foundation Series). Foundation is a cycle of five interrelated short stories, first published as a single book by Gnome Press in 1951. Collectively they tell the story of the Foundation, an institute to preserve the best of galactic civilization after the collapse of the Galactic Empire.",
+        "Rating": 3
+    },
+    {
+        "Title":"The Sandman",
+        "Type":"Comic Book",
+        "Author":"Niel Gaiman",
+        "Genre": "fantasy",
+        "Publisher":"Vertigo",
+        "Image": "images/Sandman.jpg",
+        "ShortDescription": "The Sandman is a comic book series written by Neil Gaiman and published by DC Comics.   It tells the story of Dream of the Endless, who rules over the world of dreams. The original series ran for 75 issues from January 1989 to March 1996. The series is famous for Gaiman's trademark use of anthropomorphic personification of various metaphysical entities, while also blending mythology and history in its horror setting within the DC Universe.",
+        "Rating": 3
+    },
+    {
+        "Title":"Modesty Blaise",
+        "Type":"Comic Book",
+        "Author":"Peter O'Donnell",
+        "Genre": "smooth soul",
+        "Publisher":"Titan Books",
+        "Image": "images/modesty1.jpg",
+        "ShortDescription": "Modesty Blaise is a British comic strip featuring a fictional character of the same name, created by author Peter O'Donnell and illustrator Jim Holdaway in 1963. The strip follows Modesty Blaise, an exceptional young woman with many talents and a criminal past, and her trusty sidekick Willie Garvin.",
+        "Rating": 5
+    }
+]`;

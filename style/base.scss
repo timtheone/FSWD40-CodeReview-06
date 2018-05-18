@@ -1,0 +1,19 @@
+@import "nav";
+@import "card";
+
+body {
+    background-color: rgb(75, 84, 187);
+}
+#mainContainer {
+    margin-top: 100px;
+    font-size: 13px;
+}
+
+#formContainer {
+    margin-top: 70px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+}
