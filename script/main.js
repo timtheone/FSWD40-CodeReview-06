@@ -87,6 +87,7 @@ showItems();
 function newItem () {
     let title = $("input#title").val();
     let type = $("select#type").val();
+    let rating = $("select#rating").val();
     let author = $("input#author").val();
     let genre = $("input#genre").val();
     let image = $("input#image").val();
@@ -106,7 +107,7 @@ function newItem () {
             "Publisher":publisher,
             "Image": image,
             "ShortDescription": description,
-            "Rating": 1
+            "Rating": rating
         })
         // Replacing every element in #row1 with ""
         $("#row1").html("")

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>MediaThek</title>
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" href="style/base.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="data.json"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MediaThek</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="data.json"></script>
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -42,22 +42,22 @@
         <div class="row" id="row1">
         </div>
     </div>
-
+    
     <!-- Form for adding new media objects -->
     <div class="container" id="formContainer">
         <form class="needs-validation col-lg-8 offset-lg-2" novalidate onsubmit="return false">
-        <div class="alert alert-danger alert-dismissible fade show" style="display: none">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Something went wrong!</strong>
-        </div>
-        <div class="alert alert-danger alert-dismissible fade show" style="display: none">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>I dont want to save that!</strong>
-        </div>
-        <div class="alert alert-success alert-dismissible fade show" style="display: none">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>New item has been successfully added!</strong>
-        </div>
+            <div class="alert alert-danger alert-dismissible fade show" style="display: none">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Something went wrong!</strong>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show" style="display: none">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>I dont want to save that!</strong>
+            </div>
+            <div class="alert alert-success alert-dismissible fade show" style="display: none">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>New item has been successfully added!</strong>
+            </div>
             <h1>Add new items</h1>
             <div class="row">
                 <div class="form-left col-lg-6">
@@ -68,10 +68,10 @@
                     <div class="form-group">
                         <label for="type">Category</label>
                         <select class="form-control" id="type">
-                        <option value="Movie">Movie</option>
-                        <option value="Music">Music</option>
-                        <option value="Book">Book</option>
-                        <option value="Comic Book">Comic Book</option>
+                            <option value="Movie">Movie</option>
+                            <option value="Music">Music</option>
+                            <option value="Book">Book</option>
+                            <option value="Comic Book">Comic Book</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -83,25 +83,35 @@
                         <input type="text" class="form-control" id="image" placeholder="Link to cover Image" required>
                     </div>
                 </div>
-                    <div class="form-right col-lg-6">
-                        <div class="form-group">
-                            <label for="genre">Genre</label>
-                            <input type="text" class="form-control" id="genre" placeholder="Genre" required>
-                        </div>
+                <div class="form-right col-lg-6">
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <input type="text" class="form-control" id="genre" placeholder="Genre" required>
+                    </div>
                     <div class="form-group">
                         <label for="publisher">Publisher</label>
                         <input type="text" class="form-control" id="publisher" placeholder="Publisher" required>
                     </div>
                     <div class="form-group">
-                            <label for="description">Title</label>
-                            <textarea type="text" class="form-control" id="description" placeholder="Description" required></textarea>
-                        </div>
+                        <label for="rating">Rating</label>
+                        <select class="form-control" id="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
                     </div>
+                    <div class="form-group">
+                        <label for="description">Title</label>
+                        <textarea type="text" class="form-control" id="description" placeholder="Description" required></textarea>
+                    </div>
+                </div>
             </div>
             <button id="buttonVal" class="btn btn-primary">Submit</button>
         </form>
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="script/main.js"></script>
